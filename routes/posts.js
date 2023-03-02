@@ -14,6 +14,7 @@ router.post("/", async(req,res) => {
     const posts = await Post.find({}).sort({"createdAt":-1});
     const result = posts.map((post) => {
         return {
+            id: post._id,
             title: post.title,
             user: post.user,
             createdAt: post.createdAt

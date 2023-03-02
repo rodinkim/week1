@@ -60,7 +60,6 @@ router.put("/:_postId/comments/:_commentId", async(req,res) => {
 })
 
 //댓글 삭제
-//게시글 삭제
 router.delete("/:_postId/comments/:_commentId", async(req,res) => {
   const {_postId} = req.params;
   const {_commentId} = req.params;
