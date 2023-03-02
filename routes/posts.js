@@ -68,7 +68,6 @@ router.post("/", async(req,res) => {
     if(true){
       await Post.deleteOne({_id:_postId});
     }
-    
     res.json({message: "게시글을 삭제했습니다."});
   })
 
